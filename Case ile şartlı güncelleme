@@ -1,0 +1,8 @@
+UPDATE personel
+SET maas = (
+    CASE
+        WHEN maas < 1000 THEN maas + ((maas * 20) / 100)
+        WHEN maas >= 1000 AND maas < 2000 THEN maas + ((maas * 15) / 100)
+        ELSE maas + ((maas * 10) / 100)
+    END
+)
