@@ -1,0 +1,2 @@
+DECLARE @enyuksekmaas MONEY
+SELECT @enyuksekmaas = MAX(maas) FROM personel
