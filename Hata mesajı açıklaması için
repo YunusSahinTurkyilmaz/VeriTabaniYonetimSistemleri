@@ -1,0 +1,4 @@
+SELECT 5/0
+
+SELECT * FROM master.dbo.sysmessages
+WHERE error = @@ERROR
