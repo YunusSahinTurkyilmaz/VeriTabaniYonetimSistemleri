@@ -1,0 +1,8 @@
+DECLARE @sayac INT
+SET @sayac = 1
+
+WHILE @sayac <= 5
+BEGIN
+    PRINT CAST(@sayac AS varchar(10)) + ' karesi: ' + CAST(@sayac * @sayac AS varchar(10))
+    SET @sayac = @sayac + 1
+END
