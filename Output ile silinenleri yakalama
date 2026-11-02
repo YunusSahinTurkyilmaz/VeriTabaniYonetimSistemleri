@@ -1,0 +1,12 @@
+DECLARE @silinenler TABLE (
+    ad VARCHAR(20),
+    soyad VARCHAR(20),
+    maas MONEY
+)
+
+DELETE FROM personel
+OUTPUT DELETED.ad, DELETED.soyad, DELETED.maas
+INTO @silinenler
+WHERE maas < 1300
+
+SELECT * FROM @silinenler
