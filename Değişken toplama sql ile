@@ -1,0 +1,5 @@
+DECLARE @say1 INT, @say2 INT, @toplam INT
+
+SET @say1 = 10
+SET @say2 = 15
+SET @toplam = @say1 + @say2
