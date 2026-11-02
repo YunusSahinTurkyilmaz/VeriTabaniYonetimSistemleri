@@ -1,0 +1,8 @@
+CREATE PROCEDURE kutuphane_kitaplari
+AS
+SELECT kutuphane_no, KTP.ISBN, kitap_adi
+FROM KITAP_KUTUPHANE KK 
+INNER JOIN KITAPLAR KTP ON KK.ISBN = KTP.ISBN
+GO
+
+EXECUTE kutuphane_kitaplari
