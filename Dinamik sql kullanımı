@@ -1,7 +1,0 @@
-DECLARE @tablo VARCHAR(20)
-DECLARE @sorgu VARCHAR(MAX)
-
-SET @tablo = 'KITAPLAR'
-SET @sorgu = 'SELECT * FROM ' + @tablo
-
-EXECUTE(@sorgu)
