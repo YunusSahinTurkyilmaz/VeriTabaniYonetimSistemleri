@@ -1,0 +1,5 @@
+SELECT * FROM personel
+
+DECLARE @d1 INT, @d2 INT
+SET @d1 = 10
+SET @d2 = 15
