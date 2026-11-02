@@ -1,0 +1,10 @@
+BEGIN TRY
+    SELECT 1/0
+END TRY
+BEGIN CATCH
+    SELECT 
+        ERROR_NUMBER() AS Hata_No,
+        ERROR_SEVERITY() AS Oncelik,
+        ERROR_LINE() AS Hata_Satiri,
+        ERROR_MESSAGE() AS Hata_Mesaji
+END CATCH
