@@ -1,0 +1,5 @@
+UPDATE hesaplar SET bakiye = bakiye - 1500
+WHERE hesap_no = 1453
+
+UPDATE hesaplar SET bakiye = bakiye + 1500
+WHERE hesap_no = 1454
